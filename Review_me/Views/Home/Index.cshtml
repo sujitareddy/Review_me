@@ -1,0 +1,41 @@
+﻿
+<div class="hero-bg">
+    <section class="top">
+
+        <!-- <header>
+            <a href="#">review.me</a>
+        </header> -->
+
+        <h1><span>The Ultimate</span> Book Collection</h1>
+
+        <p>BookReview is your guide to exceptional books, providing you with all you need to know about the books that matter</p>
+
+        <div class="form-container">
+            @using (Html.BeginForm("Browse", "Home", FormMethod.Post))
+            {
+                <form action="">
+                    <div class="form-left">
+                        <label for="categories">Choose a collection:</label>
+                        <select name="categories" id="categories">
+                            @foreach (Category c in ViewBag.Categories)
+                            {                               
+                                <option value=@c.list_name>@c.display_name</option>
+                            }
+                        </select>
+                    </div>
+
+                    <input type="submit" value="Find Books" id="cta-btn" >
+                </form>
+            }
+            </div>
+    </section>
+</div>
+
+<section class="authentic">
+    <div class="right-col">
+        <h2>Browse the best - Ignore the rest</h2>
+        <p>Because there are far too many books published for you to read about all of them, let alone read them all, we seek out and recommend only the best of the best. Then, we give you all the information you need to decide which books are just right for you. Among much else, BookReview provides in-depth reviews, buying options, ranks of the books, information about the authors and many more review article links.</p>
+
+    </div>
+    <img src="images/book.jpg" alt="Picture of book">
+</section>

@@ -1,0 +1,14 @@
+﻿
+<div class="hero-bg-1">
+    @foreach (Book b in ViewBag.Books)
+    {
+        <a href='@Url.Action("UltimateBook","Home", new { bookId = b.bookId})'>
+        <section class="top">
+            <div class="form-container1">
+                <img class="Book-picture" src=@b.book_image alt="Book">
+                <h4>@b.title</h4>
+            </div>
+        </section>
+        </a>
+    }
+</div>

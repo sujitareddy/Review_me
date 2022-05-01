@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review.me</title>
+    <link rel="stylesheet" href="~/css/site.css">
+    <script type="text/javascript" src="~/js/site.js"></script>
+</head>
+<body>
+<div class="hero-bg">
+        <nav class="nav">
+            <header class="logo" id="logo">
+                <a href="#">review.me</a>
+            </header>
+            <ul class="nav-links" id="nav-links">
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <li>@Html.ActionLink("About", "About", "Home")</li>
+                <li>@Html.ActionLink("Browse", "Browse", "Home")</li>
+            </ul>
+            <div class="burger" id="burger" onclick="navSlide()">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </div>@RenderBody()
+  
+
+</body>
+</html>

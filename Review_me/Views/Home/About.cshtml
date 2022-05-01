@@ -1,0 +1,101 @@
+﻿<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+<div class="hero-bg-1">
+
+    <section class="top">
+        <h1><span>About us</span> </h1>
+        <div class="form-container1">
+            <a href="https://www.linkedin.com/in/pranithreddy24/" target="_blank">
+                <img class="profile-picture" src="~/images/Pranith-1.jpg" alt="Profile">
+
+            </a>
+            <h4>Pranith Reddy S</h4>
+        </div>
+    </section>
+
+
+    <a href="https://www.linkedin.com/in/sai-mullangi-1b8416108/" target="_blank">
+        <section class="top">
+            <div class="form-container1">
+                <img class="profile-picture" src="~/images/sujitha-1.jpeg" alt="Profile">
+                <h4>Sujitha Reddy</h4>
+            </div>
+        </section>
+    </a>
+
+    <a href="http://linkedin.com/in/shreyagottimukkula" target="_blank">
+        <section class="top">
+            <div class="form-container1">
+                <img class="profile-picture" src="~/images/shreya-1.jpeg" alt="Profile">
+                <h4>Shreya</h4>
+            </div>
+        </section>
+    </a>
+
+    <h5>
+        We are Group 10 of Distributed Information System Course of Fall 2021 (ISM 6225) at University of South
+        Florida. We are pursuing MS in Business Analytics & Information Systems from Muma College of Business.
+        Pranith is the main programmer of the webpage and has worked on the Html, CSS and java script. Sujitha has
+        worked on the Data model and CSS scripts. Shreya is the one who came up with the initial idea and has
+        contributed towards CSS and Java Scripts.
+    </h5>
+
+
+    <section class="top-1">
+        <h1><span>Our Ultimate</span> Collection</h1>
+        <div class="form-container1">
+            <canvas id="myChart" width="400" height="400"></canvas>
+            <script>
+                const ctx = document.getElementById('myChart').getContext('2d');
+                const myChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: [
+                            
+                            "Books in our Collection 0's", 'Books Reviewed'
+                        ],
+                        datasets: [{
+                            label: 'Our collection',
+                            data: [@ViewBag.booksCount, @ViewBag.booksReviewed],
+                            backgroundColor: [
+                                'rgba(255, 99, 132, 0.2)',
+                                'rgba(54, 162, 235, 0.2)'
+                            ],
+                            borderColor: [
+                                'rgba(255, 99, 132, 1)',
+                                'rgba(54, 162, 235, 1)'
+                            ],
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+            </script>
+            </div>
+
+    </section>
+
+
+</div>
+
+
+<section class="authentic">
+    <div class="right-col">
+        <h2>Awesome. Project.</h2>
+        <p>
+            Our website uses New York Times open and our own custom API to provide you with best seller books acros
+            genres.
+            As seen in the Object diagram beside, we source Books, Publishers, Authors, review and Purchase from the
+            API.
+        </p>
+        <a href="https://developer.nytimes.com/docs/books-product/1/overview" target="_blank">API Link</a>
+        <p>Please find the code for this project below</p>
+        <a href="https://github.com/pranith98/WebLookAndFeel" target="_blank">Github</a>
+    </div>
+    <img src="~/images/erd.jpeg" alt="Picture of ERD">
+</section>
