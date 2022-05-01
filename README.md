@@ -1,2 +1,4 @@
 # Review.Me
 We are Group 10 of Distributed Information System Course of Spring 2022 (ISM 6225) at University of South Florida. We are pursuing MS in Business Analytics & Information Systems from Muma College of Business. BookReview is a website which acts as a guide to exceptional books, providing you with all you need to know about the books that matter. Among much else, BookReview provides reviews, and an option to add your own trusted resources to it, buying options, ranks of the books, information about the authors and many more review article links of various books. Pranith is the main programmer of the webpage and has worked on the MVC, API, EF, HTML and, CSS. Sujitha and Shreya worked on the Data model, hosting andinitial idea.
+
+![review_me](/Review_me/wwwroot/images/review_me.png)
