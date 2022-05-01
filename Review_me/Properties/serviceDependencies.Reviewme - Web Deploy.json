@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/reviewme/databases/reviewme",
+      "type": "mssql.azure",
+      "connectionId": "Data:ReviewMe:ConnectionString",
+      "secretStore": "AzureAppSettings"
+    }
+  }
+}
